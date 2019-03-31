@@ -1,5 +1,5 @@
 #!/bin/bash
-cd $(sudo locate Downloads)
+#cd $(sudo locate Downloads)
 mkdir Studio
 cd Studio
 sudo apt update
@@ -19,6 +19,8 @@ sudo chmod +x out2
 sudo chmod +x rtsp2feed_alpha
 sudo chmod +x rtsp2feed_wo_alpha
 #Download Snowmix and Gstreamer
+sudo cp Install_Snowmix.sh /
+cd /
 #./Install_Snowmix.sh
 #Move to downloads directory
 cd $(sudo locate Downloads)
