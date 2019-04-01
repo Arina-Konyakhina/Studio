@@ -41,6 +41,16 @@ sudo ./configure
 sudo make
 sudo make install
 # Moving midi script to autostart
+exit
+cd ~/.config
+mkdir autostart
+cd "$(dirname "$(find / -name "StudioClone")")"
+cd StudioClone
+cp midi.desktop ~/.config/autostart/midi.desktop
+
+# Removing trash
+cd "$(dirname "$(find / -name "Studio")")"
+sudo rm -R Studio
 
 
 sudo 
