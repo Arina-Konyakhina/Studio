@@ -38,6 +38,8 @@ sudo cp rtsp2feed_alpha /usr/local/bin/
 sudo cp rtsp2feed_wo_alpha /usr/local/bin/
 sudo cp killsnowmix.sh /usr/local/bin/
 sudo cp myscene.ini /usr/local/lib/Snowmix-0.5.1/ini
+
+echo Studio is ready, use control unit to start studio
 sudo cp MIDIInput.sh /usr/local/bin/MIDIInput.sh
 
 # Compile unistalled element x264enc
