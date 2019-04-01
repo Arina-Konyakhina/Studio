@@ -64,5 +64,3 @@ export SNOWMIX=/usr/local/lib/Snowmix-0.5.1
 sudo make
 sudo make install
 sudo ldconfig
-snowmix_demo
-
