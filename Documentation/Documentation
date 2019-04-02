@@ -1,0 +1,16 @@
+Запуск студии
+1.	Открыть консоль
+2.	Перейти в /usr/local/bin 
+3.	Набрать в консоли mysnowmix-2cams-screen-file 
+
+После остановки работы скрипта, результат будет получен testout.mp4
+
+Инициализация компоновки экрана:
+Файл mysnowmix_2feed_1big_1small.ini (находится в /usr/local/lib/Snowmix-0.5.1/inifiles)
+
+Организация вывода:
+out 2 (находится в /usr/local/bin)
+
+Все скрипты находятся по ссылке:
+https://github.com/Belket/StudioHSE 
+
