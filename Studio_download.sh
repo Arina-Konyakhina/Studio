@@ -33,7 +33,7 @@ cd StudioClone
 #Moving files to correct directories
 sudo cp myscene /usr/local/bin/ #Main file that runs everything
 sudo cp in_audio /usr/local/bin/ #Audio input stream
-sudo cp out2 /usr/local/bin/ #
+sudo cp out2 /usr/local/bin/ #An output file where all streams are mixed and written to the file
 sudo cp rtsp2feed_alpha /usr/local/bin/ #Video input stream with chroma key
 sudo cp rtsp2feed_wo_alpha /usr/local/bin/ #Video input stream without chroma key
 sudo cp killsnowmix.sh /usr/local/bin/ #Kills all the streams at the end of recording
