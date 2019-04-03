@@ -31,13 +31,13 @@ cd "$(dirname "$(find / -name "StudioClone")")"
 cd StudioClone
 
 #Moving files to correct directories
-sudo cp myscene /usr/local/bin/
-sudo cp in_audio /usr/local/bin/
-sudo cp out2 /usr/local/bin/
-sudo cp rtsp2feed_alpha /usr/local/bin/
-sudo cp rtsp2feed_wo_alpha /usr/local/bin/
-sudo cp killsnowmix.sh /usr/local/bin/
-sudo cp myscene.ini /usr/local/lib/Snowmix-0.5.1/ini
+sudo cp myscene /usr/local/bin/ #Main file that runs everything
+sudo cp in_audio /usr/local/bin/ #Audio input stream
+sudo cp out2 /usr/local/bin/ #
+sudo cp rtsp2feed_alpha /usr/local/bin/ #Video input stream with chroma key
+sudo cp rtsp2feed_wo_alpha /usr/local/bin/ #Video input stream without chroma key
+sudo cp killsnowmix.sh /usr/local/bin/ #Kills all the streams at the end of recording
+sudo cp myscene.ini /usr/local/lib/Snowmix-0.5.1/ini #Images and scenes parameters
 
 echo Studio is ready, use control unit to start studio
 sudo cp MIDIInput.sh /usr/local/bin/MIDIInput.sh
