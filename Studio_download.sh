@@ -31,7 +31,6 @@ cd /
 #Move to downloads directory
 #cd "$(dirname "$(find / -name "StudioClone")")"
 cd $StudioCatalog
-cd StudioClone
 
 #Moving files to correct directories
 sudo cp myscene /usr/local/bin/ #Main file that runs everything
@@ -58,7 +57,6 @@ cd ~/.config
 mkdir autostart
 #cd "$(dirname "$(find / -name "StudioClone")")"
 cd $StudioCatalog
-cd StudioClone
 cp midi.desktop ~/.config/autostart/midi.desktop
 
 # Removing trash
