@@ -1,7 +1,7 @@
 #!/bin/bash
 #sudo apt-get install virtualbox-guest-dkms
 #sudo reboot
-sudo apt-get install build-essential automake autoconf libtool g++ pkg-config         libsdl1.2-dev libpango1.0-dev libpng12-dev libosmesa6-dev freeglut3-dev
+sudo apt-get install build-essential automake autoconf libtool g++ pkg-config libsdl1.2-dev libpango1.0-dev libpng12-dev libosmesa6-dev freeglut3-dev
 sudo apt-get install tcl8.6 tk8.6 bwidget tcl8.6-dev
 mkdir tmp
 cd tmp
@@ -46,6 +46,10 @@ cd ..
 tar -xvf gst-plugins-ugly-1.6.3.tar.xz
 cd gst-plugins-ugly-1.6.3/
 sudo ./autogen.sh --disable-docbook --disable-gtk-doc --disable-gtk-doc-html
+sudo make
+sudo make install
+sudo apt-get install libx264-dev
+sudo ./configure
 sudo make
 sudo make install
 cd ..
