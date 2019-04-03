@@ -29,7 +29,6 @@ cd /
 ./Install_Snowmix.sh
 
 #Move to downloads directory
-#cd "$(dirname "$(find / -name "StudioClone")")"
 cd $StudioCatalog
 
 #Moving files to correct directories
@@ -55,12 +54,10 @@ sudo make install
 exit
 cd ~/.config
 mkdir autostart
-#cd "$(dirname "$(find / -name "StudioClone")")"
 cd $StudioCatalog
 cp midi.desktop ~/.config/autostart/midi.desktop
 
 # Removing trash
-#cd "$(dirname "$(find / -name "Studio")")"
 cd $StudioCatalog
 sudo rm -R Studio
 sudo apt-get remove git
