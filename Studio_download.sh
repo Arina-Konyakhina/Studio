@@ -43,13 +43,6 @@ sudo cp myscene.ini /usr/local/lib/Snowmix-0.5.1/ini #Images and scenes paramete
 echo Studio is ready, use control unit to start studio
 sudo cp MIDIInput.sh /usr/local/bin/MIDIInput.sh
 
-# Compile unistalled element x264enc
-cd /tmp/gst-plugins-ugly-1.6.3
-sudo apt-get install libx264-dev
-sudo ./configure
-sudo make
-sudo make install
-
 # Moving midi script to autostart
 exit
 cd ~/.config
