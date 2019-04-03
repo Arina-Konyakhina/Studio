@@ -1,4 +1,5 @@
 #!/bin/bash
+term=/usr/bin/gnome-terminal
 
 mkdir Studio
 cd Studio
@@ -10,6 +11,7 @@ git config —global user.name Arina-Konyakhina
 git config —global user.email arina1304@mail.ru
 git clone https://github.com/Arina-Konyakhina/Studio StudioClone
 cd StudioClone
+StudioCatalog=$term "pwd"
 
 #Changing permissions
 sudo chmod +x Install_Snowmix.sh
@@ -27,7 +29,8 @@ cd /
 ./Install_Snowmix.sh
 
 #Move to downloads directory
-cd "$(dirname "$(find / -name "StudioClone")")"
+#cd "$(dirname "$(find / -name "StudioClone")")"
+cd $StudioCatalog
 cd StudioClone
 
 #Moving files to correct directories
@@ -53,12 +56,14 @@ sudo make install
 exit
 cd ~/.config
 mkdir autostart
-cd "$(dirname "$(find / -name "StudioClone")")"
+#cd "$(dirname "$(find / -name "StudioClone")")"
+cd $StudioCatalog
 cd StudioClone
 cp midi.desktop ~/.config/autostart/midi.desktop
 
 # Removing trash
-cd "$(dirname "$(find / -name "Studio")")"
+#cd "$(dirname "$(find / -name "Studio")")"
+cd $StudioCatalog
 sudo rm -R Studio
 sudo apt-get remove git
 cd /
