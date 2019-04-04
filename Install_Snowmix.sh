@@ -45,11 +45,8 @@ sudo make install
 cd ..
 tar -xvf gst-plugins-ugly-1.6.3.tar.xz
 cd gst-plugins-ugly-1.6.3/
-sudo ./autogen.sh --disable-docbook --disable-gtk-doc --disable-gtk-doc-html
-sudo make
-sudo make install
 sudo apt-get install libx264-dev
-sudo ./configure
+sudo ./autogen.sh --disable-docbook --disable-gtk-doc --disable-gtk-doc-html
 sudo make
 sudo make install
 cd ..
