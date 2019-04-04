@@ -29,6 +29,7 @@ cd /
 ./Install_Snowmix.sh
 
 #Move to downloads directory
+echo $StudioClone
 cd $StudioCatalog
 
 #Moving files to correct directories
