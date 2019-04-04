@@ -40,7 +40,6 @@ sudo cp rtsp2feed_wo_alpha /usr/local/bin/ #Video input stream without chroma ke
 sudo cp killsnowmix.sh /usr/local/bin/ #Kills all the streams at the end of recording
 sudo cp myscene.ini /usr/local/lib/Snowmix-0.5.1/ini #Images and scenes parameters
 
-echo Studio is ready, use control unit to start studio
 sudo cp MIDIInput.sh /usr/local/bin/MIDIInput.sh
 
 # Moving midi script to autostart
