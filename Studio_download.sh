@@ -1,5 +1,4 @@
 #!/bin/bash
-term=/usr/bin/gnome-terminal
 
 mkdir Studio
 cd Studio
@@ -11,7 +10,8 @@ git config —global user.name Arina-Konyakhina
 git config —global user.email arina1304@mail.ru
 git clone https://github.com/Arina-Konyakhina/Studio StudioClone
 cd StudioClone
-StudioCatalog=$term "pwd"
+StudioCatalog=$(pwd)
+echo $StudioCatalog
 
 #Changing permissions
 sudo chmod +x Install_Snowmix.sh
@@ -29,7 +29,7 @@ cd /
 ./Install_Snowmix.sh
 
 #Move to downloads directory
-echo $StudioClone
+echo $StudioCatalog
 cd $StudioCatalog
 
 #Moving files to correct directories
