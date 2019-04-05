@@ -50,36 +50,36 @@ if [ $with_audio = 1 ] ; then app=out2 ; else app=output2screen ; fi
 $term -e $app &
 export OUTPID=$!
 
-#if [ $with_scene = 1 ] ; then
- # which snowscene.tcl
-  #if [ $? != 0 ] ; then
-   # echo "Warning. snowscene.tcl was not installed"
-  #else
-   # sleep 2
-    #(
-     # sleep 2
-      #snowscene.tcl 127.0.0.1 9999
-    #)&
-    #sleep 2
-    #pid_list="$pid_list $!"
-    #echo "pid to kill for snowscene $!"
-  #fi
-#fi
+if [ $with_scene = 1 ] ; then
+ which snowscene.tcl
+  if [ $? != 0 ] ; then
+   echo "Warning. snowscene.tcl was not installed"
+  else
+   sleep 2
+    (
+     sleep 2
+      snowscene.tcl 127.0.0.1 9999
+    )&
+    sleep 2
+    pid_list="$pid_list $!"
+    echo "pid to kill for snowscene $!"
+  fi
+fi
 
-#if [ $with_audio = 1 ] ; then
- # which snowaudio.tcl
-#  if [ $? != 0 ] ; then
- #   echo "Warning. snowaudio.tcl was not installed"
-  #else
-  #  sleep 2
-   # (
-    #  sleep 2
-     # snowaudio.tcl 127.0.0.1 9999
-   # )&
-    #pid_list="$pid_list $!"
-    #echo "pid to kill for snowaudio $!"
-  #fi
-#fi
+if [ $with_audio = 1 ] ; then
+ which snowaudio.tcl
+if [ $? != 0 ] ; then
+ echo "Warning. snowaudio.tcl was not installed"
+  else
+  sleep 2
+   (
+    sleep 2
+     snowaudio.tcl 127.0.0.1 9999
+   )&
+    pid_list="$pid_list $!"
+    echo "pid to kill for snowaudio $!"
+  fi
+fi
 
 sleep 6
 get_shm 20
