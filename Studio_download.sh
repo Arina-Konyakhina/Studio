@@ -44,7 +44,7 @@ sudo cp myscene.ini /usr/local/lib/Snowmix-0.5.1/ini #Images and scenes paramete
 sudo cp MIDIInput.sh /usr/local/bin/MIDIInput.sh
 
 # Moving midi script to autostart
-exit
+logout
 cd ~/.config
 mkdir autostart
 cd $StudioCatalog
@@ -52,6 +52,7 @@ cp midi.desktop ~/.config/autostart/midi.desktop
 
 # Removing trash
 cd $StudioCatalog
+cd ..
 sudo rm -R Studio
 sudo apt-get remove git
 cd /
