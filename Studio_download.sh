@@ -52,7 +52,7 @@ cp midi.desktop ~/.config/autostart/midi.desktop
 
 # Removing trash
 cd $StudioCatalog
-cd ..
+cd ../..
 sudo rm -R Studio
 sudo apt-get remove git
 cd /
