@@ -32,6 +32,8 @@ cd /
 echo $StudioCatalog
 cd $StudioCatalog
 
+sudo apt-get install wmctrl
+
 #Moving files to correct directories
 sudo cp myscene /usr/local/bin/ #Main file that runs everything
 sudo cp in_audio /usr/local/bin/ #Audio input stream
