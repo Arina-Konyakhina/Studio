@@ -57,3 +57,5 @@ sudo rm -R Studio
 sudo apt-get remove git
 cd /
 sudo rm Install_Snowmix.sh
+
+sudo reboot
